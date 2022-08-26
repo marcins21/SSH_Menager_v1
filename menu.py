@@ -8,8 +8,6 @@ JSON_FILEPATH = "./servers.json"
 server_objects = []
 server_names = []
 
-
-
 #Reading all Json File
 with open(JSON_FILE,"r") as f:
     json_data = json.load(f)
@@ -27,7 +25,6 @@ def load_server_names(data):
     for record in data["servers"]:
         for key in record.keys():
             server_names.append(key)
-
 
 #Adding new server 'n' - option
 def menu_add_new_server():
@@ -75,6 +72,12 @@ def menu_main():
 
     #Show all servers
     load_server_names(json_data)
+
+    #Showing all server names
+    counter = 1
+    for name in server_names[1:len(server_names)]:
+        print(counter," ",name)
+        counter +=1
 
 
 menu_main()
