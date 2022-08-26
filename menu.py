@@ -22,7 +22,7 @@ def does_file_exists(filename_path:str) -> bool:
 def menu_init_message():
     print("""n - Add new Server\nd - Delete Server \ns - Server Info """)
 
-#Showing all servers
+#Loading all server names to a list
 def load_server_names(data):
     for record in data["servers"]:
         for key in record.keys():
