@@ -1,7 +1,8 @@
 import os
 import json
 from server import *
-
+ 
+ 
 #VARS
 JSON_FILE = "servers.json"
 JSON_FILEPATH = "./servers.json"
