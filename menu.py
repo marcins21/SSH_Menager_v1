@@ -27,7 +27,7 @@ def load_server_names(data):
         for key in record.keys():
             server_names.append(key)
 
-#Adding new server 'n' - option
+#Adding new server 'n' -  option
 def menu_add_new_server():
     #Clearing Board before interactive menu
     os.system("clear")
