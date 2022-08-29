@@ -4,10 +4,10 @@
     {
     "servers": [
           {
-             "[nazwa]": {
-                "username": "[nazwa]",
-                "password": "[nazwa]",
-                "ip": "[address_ip]"
+             "pcmsitko": {
+                "username": "Marcin",
+                "password": "0000",
+                "ip": "127.0.0.1"
              }
           }
        ]
