@@ -19,7 +19,7 @@ def does_file_exists(filename_path:str) -> bool:
 
 #Info message
 def menu_init_message():
-    print("""n - Add new Server\nd - Delete Server \ns - Server Info """)
+    print("""n - Add new Server\nd - Delete Server \ns - Server Info\ne - exit """)
 
 #Loading all server names to a list
 def load_server_names(data):
@@ -50,6 +50,18 @@ def menu_add_new_server():
     #Addting new server to loaded json data
     json_data["servers"].append(data)
 
+
+#Deleting server 'd' - option
+def menu_delete_server():
+    # ...
+    pass
+
+#Showing server info 's' - option
+def menu_show_server_info():
+    # ...
+    pass
+
+
 #Main function
 def menu_main():
     #Info message
@@ -57,13 +69,37 @@ def menu_main():
     while True:
         #Menu
         command = input("command: ").lower()
-        if command == 'n':
-            menu_add_new_server()
-            write = input("Write? Y/n").lower()
 
-            #Write Data option
-            if write == '' or write == 'y':
+        #Checking Correct user input
+        if command == 'n' or command == 's' or command == 'd' or command == 'e':
+
+            #Server Options!
+            #Add Option
+            if command == 'n':
+                menu_add_new_server()
+                write = input("Write? Y/n").lower()
+
+                #Write Data option
+                if write == '' or write == 'y':
+                    break
+
+            #Show option
+            elif command == 's':
+                print("\nSHOW option\nWorking on this option ... ")
+                # ...
+
+            #Delete option
+            elif command == 'd':
+                print("\nDELETE option\nWorking on this option ... ")
+                # ...
+
+            #Exit option
+            elif command == 'e':
+                print("\nBye Bye!")
                 break
+
+        else:
+            print("\nYou Entered Wrong option ! ")
 
     #Dumping json data
     if does_file_exists(JSON_FILEPATH):
@@ -80,5 +116,5 @@ def menu_main():
         print(counter," ",name)
         counter +=1
 
-
-menu_main()
+#Call this function from `app.py` - main python file -  "runner"
+#menu_main()

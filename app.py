@@ -1,6 +1,10 @@
 import menu
 import server
 
-print("test")
-print("Testowanie Gita")
-print("Dodanie do testowego brancha")
+#Program main function
+def main():
+
+    #Calling main function from "menu.py" file
+    menu.menu_main()
+
+main()
