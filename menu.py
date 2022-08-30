@@ -85,8 +85,8 @@ def menu_main():
 
             #Show option
             elif command == 's':
-                print("\nSHOW option\nWorking on this option ... ")
                 # ...
+                print("\nSHOW option\nWorking on this option ... ")
 
             #Delete option
             elif command == 'd':
@@ -107,14 +107,15 @@ def menu_main():
             json.dump(json_data,file,indent=3)
             file.close()
 
-    #Show all servers
+    #loading servers
     load_server_names(json_data)
 
-    #Showing all server names
+    # Showing all server names
     counter = 1
     for name in server_names[1:len(server_names)]:
-        print(counter," ",name)
-        counter +=1
+        print(counter, " ", name)
+        counter += 1
+
 
 #Call this function from `app.py` - main python file -  "runner"
 #menu_main()
