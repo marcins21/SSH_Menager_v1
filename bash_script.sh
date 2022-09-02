@@ -12,7 +12,7 @@ duration=$(( SECONDS - start ))
 
 
 echo "$duration"
-if [ $duration -gt 3 ];
+if [ $duration -gt 1 ];
 then
   sleep 0.5
   clear
