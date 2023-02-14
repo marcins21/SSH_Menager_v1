@@ -1,3 +1,5 @@
+#Currently working on it ... 
+
 # Podstawowa Struktura Json
 ### Plik `servers.json` musi posiadac podana strukture
 
