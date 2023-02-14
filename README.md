@@ -1,6 +1,6 @@
-#Currently working on it ... 
+# Currently working on it ... 
 
-# Podstawowa Struktura Json
+### Podstawowa Struktura Json
 ### Plik `servers.json` musi posiadac podana strukture
 
     {
