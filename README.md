@@ -14,8 +14,7 @@
           }
        ]
     }
-Poniewaz nowe rekordy sa dodawane za pomoca funkcji `append`
-jezeli tej struktury nie bedzie, program nie zadziała
+
 
 
 # Plik `menu.py`
