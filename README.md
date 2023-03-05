@@ -6,8 +6,8 @@
     {
     "servers": [
           {
-             "pcmsitko": {
-                "username": "Marcin",
+             "pcname": {
+                "username": "username",
                 "password": "0000",
                 "ip": "127.0.0.1"
              }
